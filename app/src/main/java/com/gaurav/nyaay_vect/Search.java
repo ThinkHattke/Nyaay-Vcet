@@ -7,8 +7,10 @@ import android.text.Html;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
+import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -30,6 +32,7 @@ import java.util.Map;
 public class Search extends AppCompatActivity {
 
     ListView listView;
+    EditText editText;
 
     ArrayList<String> title = new ArrayList<String>();
     ArrayList<String> link = new ArrayList<String>();
@@ -41,6 +44,8 @@ public class Search extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
+
+        editText = (EditText) findViewById(R.id.serach);
 
         Intent intent = getIntent();
         listView = (ListView) findViewById(R.id.listview);
@@ -73,6 +78,24 @@ public class Search extends AppCompatActivity {
             }
         });
 
+    }
+
+    public void reload(View view){
+
+        String result = editText.getText().toString().trim();
+
+        if (result.isEmpty()){
+
+            Toast.makeText(this,"Enter a keyword to search",Toast.LENGTH_SHORT);
+
+        } else {
+
+            finish();
+            Intent i = new Intent(Search.this, Search.class);
+            i.putExtra("input", result);
+            startActivity(i);
+
+        }
     }
 
     public void request() {

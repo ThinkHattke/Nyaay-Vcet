@@ -125,4 +125,11 @@ public class MainDashBoard extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+    public void startit (View view) {
+
+        Intent i =new Intent(MainDashBoard.this,ChatBot.class);
+        startActivity(i);
+
+    }
 }

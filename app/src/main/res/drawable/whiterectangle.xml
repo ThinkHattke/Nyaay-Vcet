@@ -12,9 +12,4 @@
 
     <stroke android:width="0.1px"
         android:color="@color/summersky" />
-
-
-
-
-
 </shape>

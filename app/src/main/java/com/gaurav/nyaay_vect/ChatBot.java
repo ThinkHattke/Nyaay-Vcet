@@ -41,7 +41,7 @@ public class ChatBot extends AppCompatActivity {
 
                     final String inputText = userInput.getText().toString();
                     conversation.append(
-                            android.text.Html.fromHtml("<p><b>You:<b> " + inputText + "</p>")       //Extracting the User input
+                            android.text.Html.fromHtml("<p><b><font color=#cc0029>You:<b> " + inputText + "</font></p>")       //Extracting the User input
                     );
 
                     userInput.setText("");                                                       //Resetting the input area

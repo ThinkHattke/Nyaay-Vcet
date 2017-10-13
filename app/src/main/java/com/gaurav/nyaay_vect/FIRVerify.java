@@ -23,6 +23,8 @@ public class FIRVerify extends AppCompatActivity {
         setContentView(R.layout.activity_firverify);
     }
 
+    public void sendmail(){}
+
     public void onSMSLoginFlow(View view)
     {
         final Intent intent = new Intent(this, AccountKitActivity.class);
@@ -65,18 +67,21 @@ public class FIRVerify extends AppCompatActivity {
             } else {
                 if (loginResult.getAccessToken() != null) {
                     toastMessage = "Success:" + loginResult.getAccessToken().getAccountId();
+
                 } else {
                     toastMessage = String.format(
                             "Success:%s...",
                             loginResult.getAuthorizationCode().substring(0,10));
                 }
 
+                sendmail();
                 // If you have an authorization code, retrieve it from
                 // loginResult.getAuthorizationCode()
                 // and pass it to your server and exchange it for an access token.
 
                 // Success! Start your next activity...
             }
+
 
             // Surface the result to your user in an appropriate way.
             Toast.makeText(
