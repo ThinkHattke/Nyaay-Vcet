@@ -1,5 +1,6 @@
 package com.gaurav.nyaay_vect;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -38,8 +39,6 @@ public class ChatBot extends AppCompatActivity {
 
                 if(EditorInfo.IME_ACTION_DONE == i) {
 
-                    Log.i("Hits","Hit hooja");
-
                     final String inputText = userInput.getText().toString();
                     conversation.append(
                             android.text.Html.fromHtml("<p><b>You:<b> " + inputText + "</p>")       //Extracting the User input
@@ -59,10 +58,23 @@ public class ChatBot extends AppCompatActivity {
 
                                     final String outputText = response.getText().get(0);
 
+                                    if(response.getIntents().get(0).getIntent()
+                                            .endsWith("Search")) {
+
+                                        final String inputquery = response.getInputText();
+
+                                        Intent i = new Intent(ChatBot.this,Search.class);
+                                        i.putExtra("input",inputquery);
+                                        i.putExtra("type","B");
+                                        startActivity(i);
+
+                                    }
+
                                     runOnUiThread(new Runnable() {
                                         @Override
                                         public void run() {
                                             conversation.append(
+
                                                     android.text.Html.fromHtml("<p><b>Bot:</b> " + outputText + "</p")    //Displaying the ouyput to user.
                                             );
                                         }
