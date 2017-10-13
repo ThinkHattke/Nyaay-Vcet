@@ -5,14 +5,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.gaurav.nyaay_vect.Dashboard"
-    android:background="@color/ebonyclay">
+    android:background="#A1887F">
 
     <RelativeLayout
         android:id="@+id/header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/whiterectangle"
-        android:layout_marginTop="200dp">
+        android:layout_marginTop="110dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="48dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
 
         <LinearLayout
@@ -35,10 +52,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="File a case "
-                    android:layout_gravity="center"/>
+                    android:layout_gravity="center"
+                    android:textStyle="bold"/>
 
             </LinearLayout>
-
 
 
 
@@ -58,14 +75,144 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="File an FIR"
-                    android:layout_gravity="center"/>
+                    android:layout_gravity="center"
+                    android:textStyle="bold"/>
+
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp">
+
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:onClick="rticlick">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/more"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="File a RTI "
+                        android:layout_gravity="center"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:onClick="causeclick">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/mycase"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="My Cases"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"/>
+
+
+                </LinearLayout>
+
 
 
             </LinearLayout>
 
 
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp">
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/info"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Case Info "
+                    android:layout_gravity="center"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:onClick="causeclick">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/more"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cause List"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"/>
+
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+
+
         </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

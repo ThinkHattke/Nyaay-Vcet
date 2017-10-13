@@ -18,4 +18,25 @@ public class Dashboard extends AppCompatActivity {
         Intent FIRIntent = new Intent(this, FIR.class);
         startActivity(FIRIntent);
     }
+
+    public void causelist(View view) {
+
+        Intent causeIntent = new Intent(this, CauseList.class);
+        startActivity(causeIntent);
+    }
+
+    public void causeclick(View view) {
+
+        Intent causeIntent = new Intent(this, CauseList.class);
+        startActivity(causeIntent);
+    }
+
+    public void rticlick(View view) {
+
+        Intent rtiIntent = new Intent(this, fileRti.class);
+        startActivity(rtiIntent);
+
+    }
 }
+
+
