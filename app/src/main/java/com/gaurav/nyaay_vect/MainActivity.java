@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void dashboard(View view) {
 
-        Intent dashintent  = new Intent(this, Dashboard.class);
+        Intent dashintent  = new Intent(this, MainDashBoard.class);
         startActivity(dashintent);
     }
 }

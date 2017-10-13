@@ -5,7 +5,12 @@
     <string name="workspace">5bfe0f9e-80af-46f9-970f-c8270131c3e7</string>
 
 
-
     <string name="FACEBOOK_APP_ID">2021610788068986</string>
     <string name="ACCOUNT_KIT_CLIENT_TOKEN">06cfa7ba5b468d2c023c81ade6f5c3fd</string>
+    <string name="title_activity_main_dash_board">MainDashBoard</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
 </resources>
