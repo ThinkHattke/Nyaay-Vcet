@@ -32,4 +32,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void dashboard(View view) {
+
+        Intent dashintent  = new Intent(this, Dashboard.class);
+        startActivity(dashintent);
+    }
 }
