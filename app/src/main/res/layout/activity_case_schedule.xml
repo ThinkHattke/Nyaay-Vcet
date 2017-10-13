@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gaurav.nyaay_vect.CaseSchedule">
+
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="File or know about a Case"
+        android:gravity="center"
+        android:fontFamily="serif"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/header"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/whiterectangle">
+
+        <EditText
+            android:id="@+id/whenedit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Category"
+            android:fontFamily="serif"
+            android:layout_marginTop="20dp"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/whereedit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type"
+            android:fontFamily="serif"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date"
+            android:fontFamily="serif"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/typetext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Location"
+            android:fontFamily="serif"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="State"
+            android:fontFamily="serif"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/district"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="District"
+            android:fontFamily="serif"
+            android:layout_marginTop="20dp" />
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/whiterectangle"
+            android:text="Upload documents for verification"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

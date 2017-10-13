@@ -44,7 +44,8 @@
         <activity
             android:name=".MainDashBoard"
             android:label="@string/title_activity_main_dash_board"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".CaseSchedule"></activity>
     </application>
 
 </manifest>
