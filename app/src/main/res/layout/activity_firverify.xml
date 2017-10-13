@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:orientation="vertical"
+    tools:context=".FIRVerify"
+    android:background="@color/ebonyclay">
+
+
+
+    <Button
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:text="Verify By SMS"
+        android:onClick="onSMSLoginFlow"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/whiterectangle"
+        android:layout_gravity="center"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:onClick="onEmailLoginFlow"
+        android:text="Verify By Email"
+        android:background="@drawable/whiterectangle"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textColor="@color/black"/>
+</LinearLayout>

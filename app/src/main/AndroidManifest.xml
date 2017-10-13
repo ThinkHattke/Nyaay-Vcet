@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.gaurav.nyaay_vect">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -11,6 +12,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <meta-data android:name="com.facebook.accountkit.ApplicationName"
+            android:value="@string/app_name" />
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/FACEBOOK_APP_ID" />
+        <meta-data android:name="com.facebook.accountkit.ClientToken"
+            android:value="@string/ACCOUNT_KIT_CLIENT_TOKEN" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,7 +35,10 @@
         <activity android:name=".FIR" />
         <activity android:name=".CauseList" />
         <activity android:name=".MyCases" />
-        <activity android:name=".fileRti"></activity>
+        <activity android:name=".fileRti" />
+        <activity android:name=".FIRVerify"
+            android:theme="@style/AppLoginTheme"
+            tools:replace="android:theme"/>
     </application>
 
 </manifest>
