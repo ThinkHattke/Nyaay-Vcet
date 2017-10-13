@@ -28,8 +28,9 @@ public class MainDashBoard extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Intent i =new Intent(MainDashBoard.this,ChatBot.class);
+                startActivity(i);
+
             }
         });
 
@@ -126,10 +127,4 @@ public class MainDashBoard extends AppCompatActivity
         return true;
     }
 
-    public void startit (View view) {
-
-        Intent i =new Intent(MainDashBoard.this,ChatBot.class);
-        startActivity(i);
-
-    }
 }
