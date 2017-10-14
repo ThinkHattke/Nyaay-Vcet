@@ -1,5 +1,6 @@
 package com.gaurav.nyaay_vect;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -97,7 +98,8 @@ public class CaseSchedule extends AppCompatActivity {
                 @Override
                 public void onResponse(String response) {
 
-
+                    Intent i = new Intent(CaseSchedule.this,fileRti.class);
+                    startActivity(i);
 
                 }
             },

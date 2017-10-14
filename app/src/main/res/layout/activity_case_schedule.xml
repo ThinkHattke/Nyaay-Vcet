@@ -34,8 +34,7 @@
             android:layout_height="wrap_content"
             android:hint="Category"
             android:fontFamily="serif"
-            android:layout_marginTop="20dp"
-            android:inputType="date" />
+            android:layout_marginTop="20dp" />
 
         <EditText
             android:id="@+id/whereedit"

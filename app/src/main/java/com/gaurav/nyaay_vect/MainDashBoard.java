@@ -51,12 +51,6 @@ public class MainDashBoard extends AppCompatActivity
         startActivity(FIRIntent);
     }
 
-    public void (View view) {
-
-        Intent infoIntent = new Intent(this, CauseList.class);
-        startActivity(infoIntent);
-    }
-
     public void causelist(View view) {
 
         Intent causeIntent = new Intent(this, CauseList.class);
