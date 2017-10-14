@@ -129,6 +129,9 @@ public class FIRVerify extends AppCompatActivity {
                 }
 
                 sendmail();
+                Intent SuccessIntent = new Intent(this, SuccessScreen.class);
+                startActivity(SuccessIntent);
+                finish();
                 // If you have an authorization code, retrieve it from
                 // loginResult.getAuthorizationCode()
                 // and pass it to your server and exchange it for an access token.

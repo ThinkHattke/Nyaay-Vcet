@@ -53,7 +53,7 @@ public class MainDashBoard extends AppCompatActivity
 
     public void caseinfo(View view) {
 
-        Intent infoIntent = new Intent(this, CaseInfo.class);
+        Intent infoIntent = new Intent(this, CauseList.class);
         startActivity(infoIntent);
     }
 
@@ -65,7 +65,7 @@ public class MainDashBoard extends AppCompatActivity
 
     public void causeclick(View view) {
 
-        Intent causeIntent = new Intent(this, CauseList.class);
+        Intent causeIntent = new Intent(this, MyCases.class);
         startActivity(causeIntent);
     }
 
@@ -124,7 +124,7 @@ public class MainDashBoard extends AppCompatActivity
 
         } else if (id == R.id.judges) {
 
-            Intent judgeIntent = new Intent(this, Judges.class);
+            Intent judgeIntent = new Intent(this, RecentActivites.class);
             startActivity(judgeIntent);
 
         } else if (id == R.id.feecalculator) {

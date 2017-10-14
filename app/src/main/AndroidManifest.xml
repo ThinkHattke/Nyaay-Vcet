@@ -62,7 +62,8 @@
         <activity android:name=".FeesCalculator" />
         <activity android:name=".CaseCalender" />
         <activity android:name=".Judges" />
-        <activity android:name=".RecentActivites"></activity>
+        <activity android:name=".RecentActivites" />
+        <activity android:name=".SuccessScreen"></activity>
     </application>
 
 </manifest>
