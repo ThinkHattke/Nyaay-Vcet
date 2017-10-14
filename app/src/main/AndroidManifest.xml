@@ -38,7 +38,7 @@
             android:label="File a FIR" />
         <activity
             android:name=".CauseList"
-            android:label="CauseList" />
+            android:label="Nearby Stations" />
         <activity
             android:name=".MyCases"
             android:label="My Cases" />
@@ -61,9 +61,15 @@
             android:label="Case Info" />
         <activity android:name=".FeesCalculator" />
         <activity android:name=".CaseCalender" />
-        <activity android:name=".Judges" />
-        <activity android:name=".RecentActivites" />
-        <activity android:name=".SuccessScreen"></activity>
+        <activity
+            android:name=".Judges"
+            android:label="Judges" />
+        <activity
+            android:name=".RecentActivites"
+            android:label="Recent Activites" />
+        <activity android:name=".SuccessScreen" />
+        <activity android:name=".NearbyStations" />
+        <activity android:name=".LawyersList"></activity>
     </application>
 
 </manifest>
