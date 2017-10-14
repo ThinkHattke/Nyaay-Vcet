@@ -51,10 +51,18 @@ public class MainDashBoard extends AppCompatActivity
         startActivity(FIRIntent);
     }
 
+
     public void causelist(View view) {
 
         Intent causeIntent = new Intent(this, CauseList.class);
         startActivity(causeIntent);
+    }
+
+    public void lawyers(View view){
+
+        Intent causeIntent = new Intent(this, LawyersList.class);
+        startActivity(causeIntent);
+
     }
 
     public void causeclick(View view) {
@@ -73,6 +81,13 @@ public class MainDashBoard extends AppCompatActivity
 
         Intent rtiIntent = new Intent(this, fileRti.class);
         startActivity(rtiIntent);
+
+    }
+
+    public void nearbystations(View view) {
+
+        Intent intent = new Intent(this,NearbyStations.class);
+        startActivity(intent);
 
     }
 

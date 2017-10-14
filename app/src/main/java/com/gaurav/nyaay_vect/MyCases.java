@@ -61,7 +61,6 @@ public class MyCases extends AppCompatActivity {
 
                         id.add(post.getString("id"));
                         priority.add(post.getString("priority"));
-                        judge.add(post.getString("judge"));
                         date.add(post.getString("date"));
                         court.add(post.getString("court"));
                         oppo.add(post.getString("opposition"));
@@ -75,7 +74,6 @@ public class MyCases extends AppCompatActivity {
                         HashMap<String,String> hm = new HashMap<String,String>();
                         hm.put("id","Application Id Number: "+id.get(i));
                         hm.put("priority","Priority: "+priority.get(i));
-                        hm.put("judge","Judge: "+judge.get(i));
                         hm.put("date","Date: "+date.get(i));
                         hm.put("court","Court: "+court.get(i));
                         hm.put("opposition","Opposition: "+oppo.get(i));
@@ -83,8 +81,8 @@ public class MyCases extends AppCompatActivity {
 
                     }
 
-                    String[] from ={"id","priority","judge","date","court","opposition"};
-                    int[] to = {R.id.id,R.id.priority,R.id.judge,R.id.date,R.id.court,R.id.oppo};
+                    String[] from ={"id","priority","date","court","opposition"};
+                    int[] to = {R.id.id,R.id.priority,R.id.date,R.id.court,R.id.oppo};
 
                     SimpleAdapter simpleAdapter = new SimpleAdapter(getBaseContext(),list,R.layout.mycases_element_layout,from,to);
                     listView.setAdapter(simpleAdapter);

@@ -23,22 +23,11 @@ import java.util.List;
 
 public class policestn extends AppCompatActivity {
 
-    ArrayList<String> police = new ArrayList<String>();
-    ListView listView;
-
-    ArrayList<String> id = new ArrayList<String>();
-    ArrayList<String> date = new ArrayList<String>();
-    ArrayList<String> judge = new ArrayList<String>();
-    ArrayList<String> oppo = new ArrayList<String>();
-    ArrayList<String> priority = new ArrayList<String>();
-    ArrayList<String> court = new ArrayList<String>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_policestn);
     }
-
-
 
 }
