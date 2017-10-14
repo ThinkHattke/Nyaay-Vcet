@@ -44,7 +44,7 @@
             android:label="My Cases" />
         <activity
             android:name=".fileRti"
-            android:label="File a RTI" />
+            android:label="Current Status" />
         <activity
             android:name=".FIRVerify"
             android:theme="@style/AppLoginTheme"

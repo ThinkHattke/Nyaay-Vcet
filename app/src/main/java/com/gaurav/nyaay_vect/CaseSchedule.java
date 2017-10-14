@@ -91,13 +91,13 @@ public class CaseSchedule extends AppCompatActivity {
 
 
             RequestQueue queue = Volley.newRequestQueue(this);
-            final String url = "http://www.sastimasti.me/nyaay/adddata.php?cat="+cat+"&type="+type+"&date="+date+"&loc="+loc+"&state="+state+"&dis="+dis;
+            final String url = "http://www.sastimasti.me/nyaay/adddata.php?cat="+cat+"&type="+type+"&date="+date+"&loc="+loc+"&state="+state+"&place="+dis;
             String goodurl = url.replace(" ", "%20");
             StringRequest postRequest = new StringRequest(Request.Method.POST, goodurl, new Response.Listener<String>() {
                 @Override
                 public void onResponse(String response) {
 
-                    
+
 
                 }
             },
