@@ -4,7 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.gaurav.nyaay_vect.MainActivity">
+    tools:context="com.gaurav.nyaay_vect.MainActivity"
+    android:background="@color/ebonyclay">
+
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nyaay"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:fontFamily="serif"
+        android:textColor="@color/white"
+        android:layout_marginTop="187dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="10dp"
+        android:text="-Ab Insaaf Milega"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+
+
+
+
+
+
 
     <Button
         android:layout_width="300dp"
@@ -16,6 +52,8 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:background="@color/summersky"
-        android:text="Log In With Facebook"/>
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="Continue "/>
 
 </RelativeLayout>
