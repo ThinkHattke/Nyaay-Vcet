@@ -3,22 +3,32 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:id="@+id/dashboard"
+            android:icon="@drawable/dashboard"
+            android:title="Dashboard" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:id="@+id/judges"
+            android:icon="@drawable/judge"
+            android:title="Judges" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/feecalculator"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+            android:title="Fee Calculator" />
         <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:id="@+id/recentact"
+            android:icon="@drawable/act"
+            android:title="Recent Activities" />
+
+        <item
+            android:id="@+id/otherinfo"
+            android:icon="@drawable/info"
+            android:title="Other Info" />
+
+
+
     </group>
+
+
 
     <item android:title="Communicate">
         <menu>

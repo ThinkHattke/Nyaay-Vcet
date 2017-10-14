@@ -6,27 +6,16 @@
     android:layout_height="match_parent"
     tools:context="com.gaurav.nyaay_vect.MainActivity">
 
-    <TextView
-        android:onClick="test"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_above="@+id/button2"
-        android:layout_alignRight="@+id/button2"
-        android:layout_alignEnd="@+id/button2"
-        android:layout_marginBottom="103dp" />
-
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:id="@+id/button2"
+        android:onClick="dashboard"
+        android:gravity="center"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="137dp"
-        android:id="@+id/button2"
-        android:onClick="dashboard"/>
+        android:background="@color/summersky"
+        android:text="Log In With Facebook"/>
 
 </RelativeLayout>

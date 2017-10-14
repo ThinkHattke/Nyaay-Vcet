@@ -33,19 +33,34 @@
         <activity android:name=".Search" />
         <activity android:name=".Webview" />
         <activity android:name=".Login" />
-        <activity android:name=".FIR" />
-        <activity android:name=".CauseList" />
-        <activity android:name=".MyCases" />
-        <activity android:name=".fileRti" />
+        <activity
+            android:name=".FIR"
+            android:label="File a FIR" />
+        <activity
+            android:name=".CauseList"
+            android:label="CauseList" />
+        <activity
+            android:name=".MyCases"
+            android:label="My Cases" />
+        <activity
+            android:name=".fileRti"
+            android:label="File a RTI" />
         <activity
             android:name=".FIRVerify"
             android:theme="@style/AppLoginTheme"
             tools:replace="android:theme" />
         <activity
             android:name=".MainDashBoard"
-            android:label="@string/title_activity_main_dash_board"
+            android:label="Nyaay"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".CaseSchedule"></activity>
+        <activity
+            android:name=".CaseSchedule"
+            android:label="Schedule your Case" />
+        <activity
+            android:name=".CaseInfo"
+            android:label="Case Info" />
+        <activity android:name=".FeesCalculator" />
+        <activity android:name=".CaseCalender"></activity>
     </application>
 
 </manifest>

@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.gaurav.nyaay_vect.CaseSchedule">
+    tools:context="com.gaurav.nyaay_vect.CaseSchedule"
+    android:background="@color/ebonyclay">
 
 
     <TextView
@@ -15,7 +16,8 @@
         android:gravity="center"
         android:fontFamily="serif"
         android:layout_marginTop="20dp"
-        android:textSize="25sp" />
+        android:textSize="25sp"
+        android:textColor="@color/white"/>
 
 
     <LinearLayout
@@ -78,9 +80,10 @@
         <Button
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/whiterectangle"
+            android:background="@drawable/rect"
             android:text="Upload documents for verification"
-            android:layout_gravity="center" />
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"/>
 
     </LinearLayout>
 

@@ -51,6 +51,12 @@ public class MainDashBoard extends AppCompatActivity
         startActivity(FIRIntent);
     }
 
+    public void caseinfo(View view) {
+
+        Intent infoIntent = new Intent(this, CaseInfo.class);
+        startActivity(infoIntent);
+    }
+
     public void causelist(View view) {
 
         Intent causeIntent = new Intent(this, CauseList.class);
@@ -61,6 +67,12 @@ public class MainDashBoard extends AppCompatActivity
 
         Intent causeIntent = new Intent(this, CauseList.class);
         startActivity(causeIntent);
+    }
+
+    public void fileCase(View view) {
+
+        Intent fileCaseIntent = new Intent(this, CaseSchedule.class);
+        startActivity(fileCaseIntent);
     }
 
     public void rticlick(View view) {
@@ -108,13 +120,18 @@ public class MainDashBoard extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        if (id == R.id.dashboard) {
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.judges) {
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.feecalculator) {
+
+            Intent intent = new Intent(this, FeesCalculator.class);
+            startActivity(intent);
+
+        } else if (id == R.id.recentact) {
+
+
 
         } else if (id == R.id.nav_share) {
 
