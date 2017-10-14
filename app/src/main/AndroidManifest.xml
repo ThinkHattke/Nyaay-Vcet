@@ -60,7 +60,9 @@
             android:name=".CaseInfo"
             android:label="Case Info" />
         <activity android:name=".FeesCalculator" />
-        <activity android:name=".CaseCalender"></activity>
+        <activity android:name=".CaseCalender" />
+        <activity android:name=".Judges" />
+        <activity android:name=".RecentActivites"></activity>
     </application>
 
 </manifest>

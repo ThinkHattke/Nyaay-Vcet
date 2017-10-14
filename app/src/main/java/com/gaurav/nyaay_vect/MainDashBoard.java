@@ -124,6 +124,9 @@ public class MainDashBoard extends AppCompatActivity
 
         } else if (id == R.id.judges) {
 
+            Intent judgeIntent = new Intent(this, Judges.class);
+            startActivity(judgeIntent);
+
         } else if (id == R.id.feecalculator) {
 
             Intent intent = new Intent(this, FeesCalculator.class);
@@ -131,7 +134,8 @@ public class MainDashBoard extends AppCompatActivity
 
         } else if (id == R.id.recentact) {
 
-
+            Intent intent = new Intent(this, RecentActivites.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_share) {
 
